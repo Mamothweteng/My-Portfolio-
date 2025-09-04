@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>skills</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+	
+	.card-container {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center;
+    gap: 50px;            
+    padding: 40px;
+}
 
+.card {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;  
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.8s;
+    font-family: Arial, sans-serif;
+}
+
+/* Front side */
+.card-front {
+    background: pink;
+    color: white;
+    font-weight: bold;
+}
+
+/* Back side */
+.card-back {
+    background: black;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 14px;
+}
+
+/* Flip on hover */
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+</style>
+<body>
+<nav>
+	<ul>
+		
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Project.html">Project</a></li>
+		<li><a href="Skills.html">Skills</a></li>
+		<li><a href="Education.html">Education</a></li>
+		
+
+	</ul>
+</nav>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-front">
+      <h3>HTML</h3>
+    </div>
+    <div class="card-back">
+      <p>Experienced in creating structured and semantic web pages.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h3>CSS</h3>
+    </div>
+    <div class="card-back">
+      <p>Skilled in styling responsive layouts and animations.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h3>JavaScript</h3>
+    </div>
+    <div class="card-back">
+      <p>Proficient in interactive web features and dynamic content.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h3>Python</h3>
+    </div>
+    <div class="card-back">
+      <p>Experience in scripting, automation, and backend logic.</p>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-front">
+      <h3>Java</h3>
+    </div>
+    <div class="card-back">
+      <p>Building modern web apps with components and state management.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h3>Programming Foundation</h3>
+    </div>
+    <div class="card-back">
+      <p>Developed a strong programming foundation through academic projects and practice. Gained experience with loops, conditionals, functions, and basic data structures. Built problem-solving skills and logical thinking through programming challenges.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h3>Microsoft AZ-204</h3>
+    </div>
+    <div class="card-back">
+      <p>Certified in Microsoft AZ-204: Developing Soulutions for Microsoft Azure</p>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-front">
+      <h3>Delphi</h3>
+    </div>
+    <div class="card-back">
+      <p>Learned Delphi for creating practical projects and exploring programming fundamentals in High school</p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
