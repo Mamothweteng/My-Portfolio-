@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mamothweteng Lekota</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<style>
+	
+	h1{text-align: center;
+	font-family: Georgia, serif;
+	font-size: 80px;
+}
 
+h2{text-align: center;
+	font-family: Georgia, serif;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.Heading{
+
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 60px ;
+}
+
+
+.Card1{
+	text-align: left;
+	 max-width: 700px;
+    padding: 20px;
+    background: lightpink;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    line-height: 1.6;
+    font-size: 17px;
+	font-family:Georgia, serif ;
+    
+}
+.Card1:hover {  transform: translateY(-10px);}
+
+.Card2{
+
+	text-align: left;
+	position: relative;
+	left: 450px;
+	max-width: 600px;
+	background: lightpink;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	line-height: 1.6;
+	font-size: 17px;
+	font-family:Georgia, serif ;
+	padding:3.0px;
+	margin:30px;
+
+}
+.Card2:hover {  transform: translateY(-10px);}
+
+.Card3{
+
+	text-align: left;
+	position: relative;
+	left: 700px;
+	max-width: 700px;
+	background: lightpink;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	line-height: 1.6;
+	font-size: 17px;
+	font-family:Georgia, serif ;
+	padding: 10px;
+
+}
+.Card3:hover {  transform: translateY(-10px);}
+
+	.card-container {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center;
+    gap: 50px;            
+    padding: 40px;
+}
+
+.card {
+    width: 800px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 200px;
+
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.8s;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Front side */
+.card-front {
+    background: pink;
+    color: white;
+    font-weight: bold;
+}
+
+/* Back side */
+.card-back {
+    background: black;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;   /* Stack items vertically */
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    gap: 10px;                /* Adds space between <p> tags */
+}
+
+/* Flip on hover */
+.card:hover .card-front {
+    transform: rotateY(180deg);
+
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+
+.card {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card-back p{
+
+	margin: 0;
+}
+</style>
+<body>
+<nav>
+	<ul>
+		
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Project.html">Project</a></li>
+		<li><a href="Skills.html">Skills</a></li>
+		<li><a href="Education.html">Education</a></li>
+		
+
+	</ul>
+</nav>
+<div class="Heading">
+<p>Welcome, My Name is Mamothweteng</p>
+</div>
+<br><br>
+
+
+<h2>About me </h2>
+
+
+<br><br>
+<div class="Card1">
+<p>
+My name is Mamothweteng, and I believe Information Technology chose me, as it has been a part of my life since high school. I enjoy the exciting and dynamic environment that comes with it. I would describe myself as goal-oriented, resilient, and deeply passionate about technology and innovation.</p>
+</div>
+
+<div class="Card2">
+<p>I am always curious and love solving complex problems. Persistence and creativity drive me to overcome challenges. I thrive in collaborative environments where ideas flow freely. My goal is to contribute to projects that have a meaningful impact. I aim to constantly learn and grow in the world of IT and software development, focusing on building both technical expertise and strong teamwork skills.
+</p>
+</div>
+
+<div class="Card3">
+<p>
+I am a Software Engineering student, passionate about designing efficient and scalable applications. I enjoy solving complex problems through code and continuously learning new technologies. Collaboration and teamwork inspire me, as I believe great software is built together. I am particularly interested in full-stack development, cloud computing, and emerging tech trends. I strive to turn innovative ideas into real-world solutions that make a difference.
+
+</p>
+</div>
+
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-front">
+      <h3>Contact me</h3>
+    </div>
+    <div class="card-back">
+      <p>Email: thembilekota24@gmail.com</p>
+      <p>LinkedIn: Thembi Lekota</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
